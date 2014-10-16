@@ -689,6 +689,7 @@ footer .owner {
   background: #222;
   border: 5px solid #444;
   padding: 5px 15px;
+  height:255px;
   margin: -67px -10px 35px;
   color: #d6d6d6;
 }
@@ -893,7 +894,7 @@ footer .owner p a {
   height: 90px;
   margin-left: -60px;
   margin-top: -25px;
-  content: "‟";
+  content: "鈥�;
   display: block;
   float: left;
 }
