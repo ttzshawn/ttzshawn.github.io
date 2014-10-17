@@ -1,43 +1,94 @@
 <!DOCTYPE html>
-<!-- saved from url=(0055)http://mrdoob.com/projects/chromeexperiments/ball-pool/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		
-		<title>Ball Pool</title>
-		<style>
-			body {
-				overflow: hidden;
-				background-color: #000000;
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Hello~</title>
+<style>
+*{font-family: Microsoft Yahei;}
+body {
+	overflow: hidden; background-color: #000000; user-select: none; -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; -ms-user-select: none;
+}
 
-				user-select: none;
-				-webkit-user-select: none;
-				-moz-user-select: none;
-				-o-user-select: none;
-				-ms-user-select: none;
+.maindiv {
+	color: #FFF; position: absolute; left: 34.5px; top: 26px; font-family: Georgia; text-align: center; -webkit-transform: rotate(-469.196841135431deg) translateZ(0px);
+	transform: rotate(-25deg) translateZ(0px);
+}
 
-			}
-		</style>
-	</head> 
-	<body style="background-color: rgb(16, 34, 43);">
-
-	<div id="canvas"><div style="position: absolute; left: 514.600797116552px; top: 499.022719822524px; cursor: default;"><canvas width="250" height="250"></canvas><div style="color: rgb(149, 171, 99); position: absolute; left: 34.5px; top: 26px; font-family: Georgia; text-align: center; -webkit-transform: rotate(-469.196841135431deg) translateZ(0px); transform: rotate(-469.196841135431deg) translateZ(0px);"><span style="color:#10222B;font-size:40px;">Hello!</span><br><br><span style="font-size:15px;"><strong>This is how it works:</strong><br><br>1. Drag a ball.<br>2.&nbsp;Click&nbsp;on&nbsp;the&nbsp;background.<br>3. Shake your browser.<br>4. Double click.<br>5. Play!</span></div></div><canvas width="42" height="42" style="position: absolute; left: 523.363593887232px; top: 710.592675282908px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="65" height="65" style="position: absolute; left: 996.341676083142px; top: 700.742349044777px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="119" height="119" style="position: absolute; left: 349.560905586238px; top: 635.154239374814px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="52" height="52" style="position: absolute; left: 1262.31708862116px; top: 700.651424317754px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="39" height="39" style="position: absolute; left: 449.189956241251px; top: 720.805789981554px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="102" height="102" style="position: absolute; left: 1052.73137949554px; top: 651.799391049154px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="39" height="39" style="position: absolute; left: 716.182327304896px; top: 711.690566313829px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="107" height="107" style="position: absolute; left: -2.8818127716477px; top: 651.600154824082px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="63" height="63" style="position: absolute; left: 936.764251886339px; top: 690.92849840621px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="54" height="54" style="position: absolute; left: 205.087871671168px; top: 700.96224898406px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="44" height="44" style="position: absolute; left: 484.474306225936px; top: 721.886255403209px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="119" height="119" style="position: absolute; left: 1152.0893297048px; top: 640.552726188317px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="67" height="67" style="position: absolute; left: 752.561660029326px; top: 691.935666719601px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="70" height="70" style="position: absolute; left: 464.343423482126px; top: 663.741248096722px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="41" height="41" style="position: absolute; left: 1304.44840762096px; top: 720.684176188782px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="79" height="79" style="position: absolute; left: 757.556230716719px; top: 623.254852237828px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="29" height="29" style="position: absolute; left: 1413.91089262963px; top: 735.934170099575px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="36" height="36" style="position: absolute; left: 1318.07784626208px; top: 733.799726397802px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="119" height="119" style="position: absolute; left: 823.928597698313px; top: 640.775221271575px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="76" height="76" style="position: absolute; left: 269.895236666902px; top: 608.572237671554px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="99" height="99" style="position: absolute; left: 255.814313420846px; top: 664.99124016447px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="72" height="72" style="position: absolute; left: -0.624697499295884px; top: 585.015258188005px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="82" height="82" style="position: absolute; left: 195.041271798719px; top: 621.838293663797px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="117" height="117" style="position: absolute; left: 97.3324850441468px; top: 639.160944277649px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="26" height="26" style="position: absolute; left: 830.77722130888px; top: 629.132080551738px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="61" height="61" style="position: absolute; left: 338.966177072624px; top: 603.606669087169px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="48" height="48" style="position: absolute; left: 68.8202712109474px; top: 622.950492688761px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="108" height="108" style="position: absolute; left: 860.045823359148px; top: 541.615156331595px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="62" height="62" style="position: absolute; left: 455.533149370858px; top: 619.560635165317px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="98" height="98" style="position: absolute; left: 1253.15900485939px; top: 603.671759852738px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="68" height="68" style="position: absolute; left: 1374.36046559201px; top: 583.227883417436px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="114" height="114" style="position: absolute; left: 1327.79711145509px; top: 642.0097565795px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="117" height="117" style="position: absolute; left: 953.602573054386px; top: 590.48267853619px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="34" height="34" style="position: absolute; left: 1133.29321660022px; top: 641.194706788021px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="105" height="105" style="position: absolute; left: 382.441948774522px; top: 536.703649204937px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="67" height="67" style="position: absolute; left: 100.978678881445px; top: 579.346272896673px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="83" height="83" style="position: absolute; left: 162.16297920511px; top: 549.511104520493px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="94" height="94" style="position: absolute; left: 1298.72714910662px; top: 523.032548289807px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="89" height="89" style="position: absolute; left: 1135.51786367142px; top: 561.772495843713px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="61" height="61" style="position: absolute; left: 1078.04374818849px; top: 596.340897957782px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="61" height="61" style="position: absolute; left: 728.66461273879px; top: 500.95877868585px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="41" height="41" style="position: absolute; left: 481.197011013017px; top: 583.929588952105px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="94" height="94" style="position: absolute; left: 767.901520616014px; top: 534.458911261727px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas><canvas width="109" height="109" style="position: absolute; left: 278.124108984127px; top: 507.52617665554px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas></div>
+.span1 {
+	color: #aaa; font-size: 40px;
+}
+</style>
+</head>
+<body style="background-color: rgb(16, 34, 43);">
+	<div class="maindiv">
+		<span class="span1">Hello!</span><br> <br> <span style="font-size: 15px;"><strong>如何玩耍:</strong><br> <br>1. 双击.<br>2.点击空白的地方.<br>3. 摇一摇浏览器.<br>4. 拖动一个小球 .<br>5.
+			尽情玩耍吧!</span>
+	</div>
+	<div id="canvas">
+		<div style="position: absolute; left: 514.600797116552px; top: 499.022719822524px; cursor: default;">
+			<canvas width="250" height="250"></canvas>
+		</div>
+		<canvas width="42" height="42" style="position: absolute; left: 523.363593887232px; top: 710.592675282908px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="65" height="65" style="position: absolute; left: 996.341676083142px; top: 700.742349044777px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="119" height="119" style="position: absolute; left: 349.560905586238px; top: 635.154239374814px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="52" height="52" style="position: absolute; left: 1262.31708862116px; top: 700.651424317754px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="39" height="39" style="position: absolute; left: 449.189956241251px; top: 720.805789981554px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="102" height="102" style="position: absolute; left: 1052.73137949554px; top: 651.799391049154px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="39" height="39" style="position: absolute; left: 716.182327304896px; top: 711.690566313829px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="107" height="107" style="position: absolute; left: -2.8818127716477px; top: 651.600154824082px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="63" height="63" style="position: absolute; left: 936.764251886339px; top: 690.92849840621px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="54" height="54" style="position: absolute; left: 205.087871671168px; top: 700.96224898406px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="44" height="44" style="position: absolute; left: 484.474306225936px; top: 721.886255403209px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="119" height="119" style="position: absolute; left: 1152.0893297048px; top: 640.552726188317px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="67" height="67" style="position: absolute; left: 752.561660029326px; top: 691.935666719601px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="70" height="70" style="position: absolute; left: 464.343423482126px; top: 663.741248096722px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="41" height="41" style="position: absolute; left: 1304.44840762096px; top: 720.684176188782px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="79" height="79" style="position: absolute; left: 757.556230716719px; top: 623.254852237828px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="29" height="29" style="position: absolute; left: 1413.91089262963px; top: 735.934170099575px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="36" height="36" style="position: absolute; left: 1318.07784626208px; top: 733.799726397802px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="119" height="119" style="position: absolute; left: 823.928597698313px; top: 640.775221271575px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="76" height="76" style="position: absolute; left: 269.895236666902px; top: 608.572237671554px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="99" height="99" style="position: absolute; left: 255.814313420846px; top: 664.99124016447px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="72" height="72" style="position: absolute; left: -0.624697499295884px; top: 585.015258188005px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="82" height="82" style="position: absolute; left: 195.041271798719px; top: 621.838293663797px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="117" height="117" style="position: absolute; left: 97.3324850441468px; top: 639.160944277649px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="26" height="26" style="position: absolute; left: 830.77722130888px; top: 629.132080551738px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="61" height="61" style="position: absolute; left: 338.966177072624px; top: 603.606669087169px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="48" height="48" style="position: absolute; left: 68.8202712109474px; top: 622.950492688761px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="108" height="108" style="position: absolute; left: 860.045823359148px; top: 541.615156331595px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="62" height="62" style="position: absolute; left: 455.533149370858px; top: 619.560635165317px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="98" height="98" style="position: absolute; left: 1253.15900485939px; top: 603.671759852738px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="68" height="68" style="position: absolute; left: 1374.36046559201px; top: 583.227883417436px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="114" height="114" style="position: absolute; left: 1327.79711145509px; top: 642.0097565795px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="117" height="117" style="position: absolute; left: 953.602573054386px; top: 590.48267853619px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="34" height="34" style="position: absolute; left: 1133.29321660022px; top: 641.194706788021px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="105" height="105" style="position: absolute; left: 382.441948774522px; top: 536.703649204937px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="67" height="67" style="position: absolute; left: 100.978678881445px; top: 579.346272896673px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="83" height="83" style="position: absolute; left: 162.16297920511px; top: 549.511104520493px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="94" height="94" style="position: absolute; left: 1298.72714910662px; top: 523.032548289807px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="89" height="89" style="position: absolute; left: 1135.51786367142px; top: 561.772495843713px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="61" height="61" style="position: absolute; left: 1078.04374818849px; top: 596.340897957782px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="61" height="61" style="position: absolute; left: 728.66461273879px; top: 500.95877868585px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="41" height="41" style="position: absolute; left: 481.197011013017px; top: 583.929588952105px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="94" height="94" style="position: absolute; left: 767.901520616014px; top: 534.458911261727px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+		<canvas width="109" height="109" style="position: absolute; left: 278.124108984127px; top: 507.52617665554px; -webkit-transform: translateZ(0px); transform: translateZ(0px);"></canvas>
+	</div>
 
 	<script src="./Ball Pool_files/protoclass.js"></script>
 	<script src="./Ball Pool_files/box2d.js"></script>
-
 	<script src="./Ball Pool_files/Main.js"></script>
-
+	<script src="./Ball Pool_files/ga.js" type="text/javascript"></script>
 	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script><script src="./Ball Pool_files/ga.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	try {
-	var pageTracker = _gat._getTracker("UA-86951-7");
-	pageTracker._trackPageview();
-	} catch(err) {}</script>
+		try {
+			var pageTracker = _gat._getTracker("UA-86951-7");
+			pageTracker._trackPageview();
+		} catch (err) {
+		}
+	</script>
 
-	
 
-</body></html>
+
+</body>
+</html>
