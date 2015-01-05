@@ -14,11 +14,11 @@ var position = new Array(0, 25, 0, 25, 0, 25, 0, 25);
 
 search(position, command, urlTail);
 
-function search(position, command, urlTail) {
+/*function search(position, command, urlTail) {
 	var urlMid = 'baidu';
 	checkDomain(urlMid, urlTail)
-}
-/*
+}*/
+
 function search(position, command, urlTail) {
 	var urlMid;
 	if (command == '2') {
@@ -29,25 +29,29 @@ function search(position, command, urlTail) {
 			}
 		}
 	}
-}*/
+}
 
 // create server
 function checkDomain(urlm, urlt) {
+	var r1 = Math.floor(Math.random() * 100);
+	var r2 = Math.floor(Math.random() * 100);
+	var r3 = Math.floor(Math.random() * 100);
+	var r4 = Math.floor(Math.random() * 100);
+	var rip = '1' + r1 + '.1' + r2 + '.1' + r3 + '.1' + r4;
 	var options = {  
 		hostname: 'panda.www.net.cn', 
 		path : '/cgi-bin/check.cgi?area_domain=' + urlm + urlt,
 		method: 'GET',
-		headers: { 'Content-Type':contentType,'User-Agent': userAgent, Cookie:'__utma=2.334859867.1407493440.1409572473.1410496833.11; __utmz=1.1410496833.11.7.utmcsr=aliyun|utmccn=ecs_domain_special|utmcmd=sreach'}
+		headers: { 'Content-Type':contentType,'User-Agent': userAgent, Cookie:'', 'x-forwarded-for':rip}
 	};
-	console.log(options);
 	var req = http.request(options, function (res) {  
 		res.setEncoding('utf8');  
 		count += 1;
 		res.on('data', function (chunk) { 
-			if (chunk.indexOf('200') > 0) {
+			if (chunk.indexOf('210') > 0) {
 				console.log(urlm + urlt);
 			} else {
-				console.log(chunk);
+				console.log();
 			}
 		});
 		res.on('end', function () {});
