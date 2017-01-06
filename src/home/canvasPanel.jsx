@@ -2,6 +2,7 @@ import React from 'react';
 import AboutMe from './aboutMe.jsx'
 import RainyDay from '../utils/rainyday';
 import './style.scss';
+import Parallax from '../utils/parallax.js';
 
 export default class CanvasPanel extends React.Component {
 
@@ -11,7 +12,9 @@ export default class CanvasPanel extends React.Component {
   }
 
   componentDidMount() {
-    this.init()
+    // this.init()
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
   }
 
   init() {
@@ -33,7 +36,9 @@ export default class CanvasPanel extends React.Component {
     return (
       <div>
         <div id='container'>
-          <img id="background" alt="background" src={'./dist/city.jpg'} />
+          <ul id="scene" className="scene">
+            <li className="layer" data-depth="0.30"><img id="background" alt="background" src={'./dist/city1.jpg'} /></li>
+          </ul>
         </div>
         <AboutMe></AboutMe>
       </div>
