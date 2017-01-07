@@ -25,4 +25,13 @@ module.exports = {
       }
     ]
   },
+  // devtool: 'eval-source-map',
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.NoErrorsPlugin()
+  ]
 };
