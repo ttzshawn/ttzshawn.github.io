@@ -1,8 +1,8 @@
 import React from 'react';
 import AboutMe from './aboutMe.jsx'
-import RainyDay from '../utils/rainyday';
+import RainyDay from '../../utils/rainyday';
 import './style.scss';
-import Parallax from '../utils/parallax.js';
+import Parallax from '../../utils/parallax.js';
 
 export default class CanvasPanel extends React.Component {
 

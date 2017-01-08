@@ -1,5 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import CanvasPanel from './home/canvasPanel.jsx';
+import { render } from 'react-dom';
+import { Router, Route, hashHistory } from 'react-router'
+import CanvasPanel from './components/home/canvasPanel.jsx';
+import Full from './components/full/Full.jsx'
 
-ReactDOM.render(<CanvasPanel />, document.getElementById('main'));
+render((
+  <Router history={hashHistory}>
+    <Route path="/" component={CanvasPanel} />
+    <Route path="/full" component={Full} />
+  </Router>
+), document.getElementById('main'));
