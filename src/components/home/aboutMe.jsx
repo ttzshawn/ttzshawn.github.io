@@ -4,7 +4,7 @@ export default function AboutMe() {
     <div id='about-me'>
       <a href="http://www.linkedin.com/in/shawnzhang009">Shawn</a>
       <span className="seperate-mark"> | </span>
-      <a href="https://github.com/shawnzhang009">Github</a>
+      <a href="https://github.com/ttzshawn">Github</a>
     </div>
   )
 }
